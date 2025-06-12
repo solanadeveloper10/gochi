@@ -5,6 +5,39 @@
     <link rel="icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gochi - AI Pet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100..700&family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      html,
+      body {
+        cursor: none !important;
+      }
+
+      #custom-cursor {
+        position: fixed;
+        pointer-events: none;
+        z-index: 9999;
+        width: 18px;
+        height: 18px;
+        background-image: url("/cursor1.png");
+        background-size: contain;
+      }
+      #custom-cursor.cursor2 {
+        background-image: url("/cursor2.png");
+      }
+
+      @media (max-width: 768px) {
+        #custom-cursor,
+        #custom-cursor.cursor2 {
+          display: none;
+        }
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>
